@@ -1,0 +1,98 @@
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+.widget-container {
+  position: relative;
+  border-radius: $border-radius;
+  transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.18);
+  cursor: move;
+
+  .btn-close {
+    position: absolute;
+    top: 0.55rem;
+    right: 1.3rem;
+    font-size: 0.7rem;
+    z-index: 2;
+
+    &.extra-down {
+      top: 3rem;
+    }
+  }
+
+  &.no-shadow:not(:active):not(.cdk-drag-preview) {
+    border: none;
+    box-shadow: none;
+  }
+
+  &:active {
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+    &.no-shadow {
+      border: solid 1px transparent;
+    }
+  }
+}
+
+.widget-container-placeholder {
+  background: #cccccc7a;
+  border: dashed 1px #999;
+  min-height: 200px;
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.cdk-drag-preview {
+  background: var(--bs-body-bg);
+  box-sizing: border-box;
+  border-radius: $border-radius;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.cdk-drop-list-dragging .widget-container:not(.cdk-drag-placeholder) {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+@include media-breakpoint-down(lg) {
+  .widget-container .btn-close.extra-down {
+    top: 4.9rem;
+  }
+}
+
+// SCSS
+// SCSS
+
+
+
+
+
+
+main {
+  display: flex;
+  justify-content: center; // Centre le contenu horizontalement à l'intérieur du cadre
+  align-items: center; // Centre le contenu verticalement à l'intérieur du cadre
+  flex-direction: column; // S'assure que les éléments enfants sont empilés verticalement
+  background-color: white; // Fond blanc pour le cadre principal
+  padding: 20px; // Espacement intérieur
+  border-radius: 10px; // Coins arrondis
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Ombre pour l'effet de profondeur
+  transition: transform 0.3s ease, box-shadow 0.3s ease; // Transition pour les effets d'animation
+  justify-content: center; // Centre le contenu horizontalement
+  height: 70vh; // Prend toute la hauteur de la fenêtre
+  &:hover {
+    transform: translateY(-5px); // Légère translation vers le haut lors du survol
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); // Ombre plus prononcée lors du survol
+  }
+}
+
+.paragraph {
+  font-size: 30px; // Taille de la police
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #333; // Couleur du texte
+  line-height: 1.5; // Hauteur de ligne pour une meilleure lisibilité
+  text-align: center; // Centrer le texte à l'intérieur du paragraphe
+}

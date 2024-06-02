@@ -1,0 +1,14 @@
+C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\bin\Debug\net8.0\QuickApp.Core.deps.json
+C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\bin\Debug\net8.0\QuickApp.Core.runtimeconfig.json
+C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\bin\Debug\net8.0\QuickApp.Core.dll
+C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\bin\Debug\net8.0\QuickApp.Core.pdb
+C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\obj\Debug\net8.0\QuickApp.Core.csproj.AssemblyReference.cache
+C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\obj\Debug\net8.0\QuickApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\obj\Debug\net8.0\QuickApp.Core.AssemblyInfoInputs.cache
+C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\obj\Debug\net8.0\QuickApp.Core.AssemblyInfo.cs
+C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\obj\Debug\net8.0\QuickApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\obj\Debug\net8.0\QuickApp.Core.dll
+C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\obj\Debug\net8.0\refint\QuickApp.Core.dll
+C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\obj\Debug\net8.0\QuickApp.Core.pdb
+C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\obj\Debug\net8.0\QuickApp.Core.genruntimeconfig.cache
+C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\obj\Debug\net8.0\ref\QuickApp.Core.dll

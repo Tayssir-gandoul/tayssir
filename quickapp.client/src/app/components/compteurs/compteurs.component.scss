@@ -1,0 +1,90 @@
+﻿.container {
+  font-family: 'Gorgias', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.compteurs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.compteurs-table th,
+.compteurs-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.compteurs-table th {
+  background-color: #f2f2f2;
+}
+
+.compteurs-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.ajout-formulaire {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ajout-formulaire h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.ajout-formulaire label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.ajout-formulaire input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.ajout-formulaire button {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.ajout-formulaire button:hover {
+  background-color: #0056b3;
+}
+
+.modifier-btn, .supprimer-btn, .ajouter-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+margin: 10px;
+}
+
+.modifier-btn:hover, .supprimer-btn:hover, .ajouter-btn:hover {
+  background-color: #0056b3;
+}

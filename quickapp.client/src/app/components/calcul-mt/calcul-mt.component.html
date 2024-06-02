@@ -1,0 +1,182 @@
+
+
+  
+
+
+
+    <div [@fadeInOut]>
+        <h1>Facture Moyenne Tension</h1>
+        <!-- Formulaire de saisie des données -->
+        <form id="billCalculationForm" (ngSubmit)="calculateBill(billCalculationResult)">
+          <table>
+            <tr>
+              <th>N°Facture</th>
+              <th>Réf Compteur</th>
+              <th>Période</th>
+            </tr>
+            <tr>
+              <td><input type="text" [(ngModel)]="billCalculationResult.numeroFacture" name="numeroFacture" required> </td>
+              <td><input type="text" [(ngModel)]="billCalculationResult.reference" name="reference" required></td>
+              <td><input type="text" [(ngModel)]="billCalculationResult.periode" name="periode" required></td>
+            </tr>
+          </table>
+      
+
+      <!-- Étape 1: Calcul de la consommation à facturer (Kwh) -->
+      <h2>Étape 1: Calcul de la consommation à facturer (Kwh)</h2>
+      <div>
+        <h4>Phase Jour</h4>
+        <label>Ancien Index:</label>
+        <input type="number" name="ancien_index_jour" [(ngModel)]="bill.ancienIndexJour">
+        <label>Nouveau Index:</label>
+        <input type="number" name="nouveau_index_jour" [(ngModel)]="bill.nouveauIndexJour" placeholder="à saisir">
+        <label>Perte à Vide:</label>
+        <input type="number" name="perte_vide_jour" [(ngModel)]="bill.perteVideJour" placeholder="à saisir">
+        <label>Perte en Charge:</label>
+        <input type="number" name="perte_charge_jour" [(ngModel)]="bill.perteChargeJour" placeholder="à saisir">
+        <label>Coefficient Multiplicateur:</label>
+        <input type="number" name="coefficient_multiplicateur_jour" [(ngModel)]="bill.coefficientMultiplicateurJour" placeholder="à saisir">
+      </div>
+
+      <div>
+        <h4>Phase Nuit</h4>
+        <label>Ancien Index:</label>
+        <input type="number" name="ancien_index_nuit" [(ngModel)]="bill.ancienIndexNuit">
+        <label>Nouveau Index:</label>
+        <input type="number" name="nouveau_index_nuit" [(ngModel)]="bill.nouveauIndexNuit" placeholder="à saisir">
+        <label>Perte à Vide:</label>
+        <input type="number" name="perte_vide_nuit" [(ngModel)]="bill.perteVideNuit" placeholder="à saisir">
+        <label>Perte en Charge:</label>
+        <input type="number" name="perte_charge_nuit" [(ngModel)]="bill.perteChargeNuit" placeholder="à saisir">
+        <label>Coefficient Multiplicateur:</label>
+        <input type="number" name="coefficient_multiplicateur_nuit" [(ngModel)]="bill.coefficientMultiplicateurNuit" placeholder="à saisir">
+      </div>
+      
+      <div>
+        <h4>Phase Pointe</h4>
+        <label>Ancien Index:</label>
+        <input type="number" name="ancien_index_pointe" [(ngModel)]="bill.ancienIndexPointe">
+        <label>Nouveau Index:</label>
+        <input type="number" name="nouveau_index_pointe" [(ngModel)]="bill.nouveauIndexPointe" placeholder="à saisir">
+        <label>Perte à Vide:</label>
+        <input type="number" name="perte_vide_pointe" [(ngModel)]="bill.perteVidePointe" placeholder="à saisir">  
+        <label>Perte en Charge:</label>
+        <input type="number" name="perte_charge_pointe" [(ngModel)]="bill.perteChargePointe" placeholder="à saisir">
+        <label>Coefficient Multiplicateur:</label>
+        <input type="number" name="coefficient_multiplicateur_pointe" [(ngModel)]="bill.coefficientMultiplicateurPointe" placeholder="à saisir">
+      </div>
+
+      <!-- Bouton de soumission pour le calcul de la consommation à facturer -->
+      <button type="submit">Calculer Consommation à Facturer De Chaque Phese</button>
+
+      <!-- Affichage des consommations calculées -->
+      <div>
+        <h4>Consommation à Facturer Phase Jour Khw</h4>
+        <input type="number" class="R" name="consommation_Facturer_Phese_Jour" [(ngModel)]="bill.consommationFacturerPhaseJour" placeholder="à Calculer">
+        <h4>Consommation à Facturer Phase Nuit Khw</h4>
+        <input type="number" class="R" name="consommation_Facturer_Phese_Nuit" [(ngModel)]="bill.consommationFacturerPhaseNuit" placeholder="à Calculer">
+        <h4>Consommation à Facturer Phase Pointe Khw</h4>
+        <input type="number" class="R" name="consommation_Facturer_Phese_Pointe" [(ngModel)]="bill.consommationFacturerPhasePointe" placeholder="à Calculer">
+      </div>
+
+      <!-- Affichage de la consommation totale -->
+      <div>
+        <h3>Consommation à Facturer Total Kwh</h3>
+        <input type="number" class="R" name="consommation_Facturer_Total" [(ngModel)]="bill.consommationFacturerTotal" placeholder="à Calculer">
+        <button type="submit">Calculer Consommation Total</button>
+      </div>
+
+      <!-- Étape 2: Calcul du montant à payer -->
+      <h2>Étape 2: Calcul du montant à payer</h2>
+      <div id="etape2">
+        <h4>Phase Jour</h4>
+        <label>Prix unitaire (Dinar/Kwh):</label>
+        <input type="number" name="prix_unitaire_jour" [(ngModel)]="bill.prixUnitaireJour" placeholder="à saisir">
+        <label>Montant à Payer Phase jour En Dinar</label>
+        <input type="number" class="R" name="Montant_Payer_Phese_Jour" [(ngModel)]="bill.montantPayerPhaseJour" placeholder="à Calculer">
+    
+     <h4>Phase Nuit</h4>
+      <label>Prix unitaire (Dinar/Kwh):</label>
+      <input type="number" name="prix_unitaire_nuit" [(ngModel)]="bill.prixUnitaireNuit" placeholder="à saisir">
+      <label>Montant à Payer Phase Nuit En Dinar</label>
+      <input type="number" class="R" name="Montant_Payer_Phese_Nuit" [(ngModel)]="bill.montantPayerPhaseNuit" placeholder="à Calculer">
+
+      </div>
+      <!-- Affichage du montant total à payer -->
+      <div id="etape2">
+        <h4>Montant à Payer Total (Dinar)</h4>
+        <input type="number" class="R" name="Montant_Payer_Total" [(ngModel)]="bill.montantPayerTotal" placeholder="à Calculer">
+      </div>
+
+      <!-- Calcul total 1 -->
+      <h2>Calculer total 1</h2>
+      <div id="total1">
+        <label>Bonification (Dinar):</label>
+        <input type="number" name="bonification" [(ngModel)]="bill.bonification" placeholder="à saisie">
+        <label>Pénalité (Dinar):</label>
+        <input type="number" name="penalite" [(ngModel)]="bill.penalite" placeholder="à saisie">
+        <h4>Totale 1:</h4>
+        <input type="number" class="R" name="Total_1" [(ngModel)]="bill.total1" placeholder="à Calculer">
+        <h4>Phase Pointe</h4>
+        <label>Prix unitaire (Dinar/Kwh):</label>
+        <input type="number" name="prix_unitaire_pointe" [(ngModel)]="bill.prixUnitairePointe" placeholder="à saisir">
+        <label>Montant à Payer Phase Pointe En Dinar</label>
+        <input type="number" class="R" name="Montant_Payer_Phese_Pointe" [(ngModel)]="bill.montantPayerPhasePointe" placeholder="à Calculer">
+      </div>
+
+      <!-- Calcul total 2 -->
+      <h2>Calculer total 2</h2>
+      <div id="total2">
+        <label>Prime de puissance (Dinar):</label>
+        <input type="number" name="prime_puissance" [(ngModel)]="bill.primePuissance" placeholder="à saisir">
+        <label>Location de matériel (Dinar):</label>
+        <input type="number" name="location_materiel" [(ngModel)]="bill.locationMateriel" placeholder="à saisir">
+        <label>Frais d'intervention (Dinar):</label>
+        <input type="number" name="frais_intervention" [(ngModel)]="bill.fraisIntervention" placeholder="à saisir">
+        <label>Frais de relance (Dinar):</label>
+        <input type="number" name="frais_relance" [(ngModel)]="bill.fraisRelance" placeholder="à saisir">
+        <label>Frais de retard (Dinar):</label>
+        <input type="number" name="frais_retard" [(ngModel)]="bill.fraisRetard" placeholder="à saisir">
+        <h4>Total 2:</h4>
+        <input type="number" class="R" name="Total_2" [(ngModel)]="total2" placeholder="à Calculer">
+      </div>
+      
+
+      <!-- Calcul total 3 -->
+      <h2>Calculer total 3</h2>
+<div id="total3">
+  <label>TVA sur consommation (Dinar):</label>
+  <input type="number" name="tva_consommation" [(ngModel)]="bill.tvaConsommation" placeholder="à saisir">
+  <label>TVA redevance (Dinar):</label>
+  <input type="number" name="tva_redevance" [(ngModel)]="bill.tvaRedevance" placeholder="à saisir">
+  <label>Contribution RTT (Dinar):</label>
+  <input type="number" name="contribution_rtt" [(ngModel)]="bill.contributionRTT" placeholder="à saisir">
+  <label>Surtaxe municipale (Dinar):</label>
+  <input type="number" name="surtaxe_municipale" [(ngModel)]="bill.surtaxeMunicipale" placeholder="à saisir">
+  <h4>Total 3:</h4>
+  <input type="number" class="R" name="Total_3" [(ngModel)]="total3" placeholder="à Calculer">
+</div>
+
+
+      <!-- Contribution GMG -->
+      <h3>Contribution GMG (Dinar)</h3>
+      <div id="contribution_gmg">
+        <input type="number" name="contribution_gmg" [(ngModel)]="bill.contributionGMG" placeholder="à saisir">
+      </div>
+
+      <div id="Monyant_Final">
+        <h2>Net à Payer</h2>
+        <!-- Ajoutez le champ d'affichage pour le net à payer -->
+        <button type="submit">Calculer Net à Payer</button>
+      </div>
+  
+      <button type="submit">Calculer et Enregistrer</button>
+    </form>
+</div>
+
+
+ 
+
+
+
+     

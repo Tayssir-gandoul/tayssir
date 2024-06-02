@@ -1,0 +1,75 @@
+<header class="pageHeader">
+  <h3><i class="fa fa-handshake-o fa-lg page-caption" aria-hidden="true"></i> {{'Compteurs' | translate}}</h3>
+</header>
+
+<div [@fadeInOut]>
+  <div class="container">
+    <span class="text-muted">
+      <h1>Les Compteurs</h1>
+    </span>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Rechercher par référence" [(ngModel)]="rechercheReference" (input)="filtrerCompteurs()" />
+    </div>
+
+    <table id="tableau" class="compteurs-table">
+      <thead>
+        <tr>
+          <th>Référence</th>
+          <th>Nouveau Index</th>
+          <th>Ancien Index</th>
+          <th>Date Installation</th>
+          <th>Adresse</th>
+          <th>District</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let compteur of compteursFiltres; let i = index">
+          <td>{{ compteur.reference }}</td>
+          <td>{{ compteur.nouveauIndex }}</td>
+          <td>{{ compteur.ancienIndex }}</td>
+          <td>{{ compteur.dateInstallation | date }}</td>
+          <td>{{ compteur.adresse }}</td>
+          <td>{{ compteur.district }}</td>
+          <td>
+            <button class="modifier-btn" (click)="modifierCompteur(compteur)">Modifier</button>
+            <button class="supprimer-btn" (click)="supprimerCompteur(i)">Supprimer</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button class="ajouter-btn" (click)="afficherFormulaireAjout()">Ajouter compteur</button>
+
+    <div *ngIf="afficherFormulaire" class="ajout-formulaire fadeIn">
+      <h2>Ajouter un nouveau compteur</h2>
+      <form (ngSubmit)="ajouterCompteur()">
+        <label>Référence</label>
+        <input type="number" [(ngModel)]="nouveauCompteur.reference" name="reference" required />
+
+        <label>Nouveau Index</label>
+        <input type="number" [(ngModel)]="nouveauCompteur.nouveauIndex" name="nouveauIndex" required />
+
+        <label>Ancien Index</label>
+        <input type="number" [(ngModel)]="nouveauCompteur.ancienIndex" name="ancienIndex" required />
+
+        <label>Date Installation</label>
+        <input type="date" [(ngModel)]="nouveauCompteur.dateInstallation" name="dateInstallation" required />
+
+        <label>Adresse</label>
+        <input type="text" [(ngModel)]="nouveauCompteur.adresse" name="adresse" required />
+
+        <label>District</label>
+        <input type="text" [(ngModel)]="nouveauCompteur.district" name="district" required />
+
+        <button type="submit">Ajouter</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+

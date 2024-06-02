@@ -1,0 +1,155 @@
+2024-05-28T12:21:17.6561217+01:00  [WRN] The WebRootPath was not found: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2024-05-28T12:21:25.0303484+01:00  [INF] Executed DbCommand ("72"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-05-28T12:21:25.1772565+01:00  [INF] Executed DbCommand ("82"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2024-05-28T12:21:25.2068570+01:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-05-28T12:21:25.2297358+01:00  [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2024-05-28T12:21:25.3588483+01:00  [INF] Executed DbCommand ("77"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2024-05-28T12:21:25.4087175+01:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2024-05-28T12:21:25.8556580+01:00  [INF] Executed DbCommand ("52"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2024-05-28T12:21:26.1192465+01:00  [INF] Executed DbCommand ("81"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2024-05-28T12:21:26.2473104+01:00  [INF] Executed DbCommand ("6"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2024-05-28T12:21:26.6441391+01:00  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2024-05-28T12:21:26.6474021+01:00  [INF] Quartz Scheduler created (389d80b0)
+2024-05-28T12:21:26.6586540+01:00  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2024-05-28T12:21:26.6631297+01:00  [INF] RAMJobStore initialized. (8c5a21db)
+2024-05-28T12:21:26.6828605+01:00  [INF] Quartz Scheduler 3.9.0.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized (a92b7017)
+2024-05-28T12:21:26.6940045+01:00  [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10 (7942d54d)
+2024-05-28T12:21:26.6982791+01:00  [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False (46d3fae1)
+2024-05-28T12:21:26.9771683+01:00  [WRN] The WebRootPath was not found: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2024-05-28T12:21:27.1721697+01:00  [INF] Now listening on: "https://localhost:7085" (d826f4b8)
+2024-05-28T12:21:27.1770309+01:00  [INF] Now listening on: "http://localhost:5225" (d826f4b8)
+2024-05-28T12:21:27.1816543+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-05-28T12:21:27.1889426+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-05-28T12:21:27.1944370+01:00  [INF] Content root path: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server" (cc26f24e)
+2024-05-28T12:21:27.2039579+01:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2024-05-28T12:23:29.4846569+01:00  [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T12:25:33.9884602+01:00 0HN3V118DQ4P4:00000001 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T12:27:36.1392247+01:00 0HN3V118DQ4PG:00000005 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T12:29:37.8817381+01:00 0HN3V118DQ4Q7:00000001 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T12:30:27.2454605+01:00  [INF] Executed DbCommand ("93"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__date_0='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""DELETE FROM [o]
+FROM [OpenIddictTokens] AS [o]
+WHERE [o].[Id] IN (
+    SELECT TOP(@__p_1) [o0].[Id]
+    FROM [OpenIddictTokens] AS [o0]
+    LEFT JOIN [OpenIddictAuthorizations] AS [o1] ON [o0].[AuthorizationId] = [o1].[Id]
+    WHERE [o0].[CreationDate] < @__date_0 AND ((([o0].[Status] <> N'inactive' OR [o0].[Status] IS NULL) AND ([o0].[Status] <> N'valid' OR [o0].[Status] IS NULL)) OR ([o1].[Id] IS NOT NULL AND ([o1].[Status] <> N'valid' OR [o1].[Status] IS NULL)) OR [o0].[ExpirationDate] < GETUTCDATE())
+    ORDER BY [o0].[Id]
+)" (0723d8ff)
+2024-05-28T12:30:27.3097966+01:00  [INF] Executed DbCommand ("21"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__date_0='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""DELETE FROM [o]
+FROM [OpenIddictAuthorizations] AS [o]
+WHERE [o].[Id] IN (
+    SELECT TOP(@__p_1) [o0].[Id]
+    FROM [OpenIddictAuthorizations] AS [o0]
+    WHERE [o0].[CreationDate] < @__date_0 AND ([o0].[Status] <> N'valid' OR [o0].[Status] IS NULL OR ([o0].[Type] = N'ad-hoc' AND NOT EXISTS (
+        SELECT 1
+        FROM [OpenIddictTokens] AS [o1]
+        WHERE [o0].[Id] = [o1].[AuthorizationId])))
+    ORDER BY [o0].[Id]
+)" (0723d8ff)
+2024-05-28T12:31:39.9990902+01:00 0HN3V118DQ4QS:00000001 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T12:33:42.3428099+01:00 0HN3V118DQ4RJ:00000003 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T16:54:42.8193104+01:00  [WRN] The WebRootPath was not found: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2024-05-28T16:54:45.3304499+01:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-05-28T16:54:45.3837302+01:00  [INF] Executed DbCommand ("39"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2024-05-28T16:54:45.3908108+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-05-28T16:54:45.3940926+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2024-05-28T16:54:45.4462928+01:00  [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2024-05-28T16:54:45.4872211+01:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2024-05-28T16:54:45.6464983+01:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2024-05-28T16:54:45.7667179+01:00  [INF] Executed DbCommand ("30"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2024-05-28T16:54:45.8423190+01:00  [INF] Executed DbCommand ("2"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2024-05-28T16:54:46.1342229+01:00  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2024-05-28T16:54:46.1356350+01:00  [INF] Quartz Scheduler created (389d80b0)
+2024-05-28T16:54:46.1371187+01:00  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2024-05-28T16:54:46.1383662+01:00  [INF] RAMJobStore initialized. (8c5a21db)
+2024-05-28T16:54:46.1397110+01:00  [INF] Quartz Scheduler 3.9.0.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized (a92b7017)
+2024-05-28T16:54:46.1408800+01:00  [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10 (7942d54d)
+2024-05-28T16:54:46.1420748+01:00  [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False (46d3fae1)
+2024-05-28T16:54:46.3524944+01:00  [WRN] The WebRootPath was not found: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2024-05-28T16:54:46.4969874+01:00  [INF] Now listening on: "https://localhost:7085" (d826f4b8)
+2024-05-28T16:54:46.5000010+01:00  [INF] Now listening on: "http://localhost:5225" (d826f4b8)
+2024-05-28T16:54:46.5023689+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-05-28T16:54:46.5048290+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-05-28T16:54:46.5065595+01:00  [INF] Content root path: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server" (cc26f24e)
+2024-05-28T16:54:46.5110271+01:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2024-05-28T16:56:54.4505520+01:00  [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T16:58:46.5062246+01:00  [INF] Executed DbCommand ("118"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__date_0='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""DELETE FROM [o]
+FROM [OpenIddictTokens] AS [o]
+WHERE [o].[Id] IN (
+    SELECT TOP(@__p_1) [o0].[Id]
+    FROM [OpenIddictTokens] AS [o0]
+    LEFT JOIN [OpenIddictAuthorizations] AS [o1] ON [o0].[AuthorizationId] = [o1].[Id]
+    WHERE [o0].[CreationDate] < @__date_0 AND ((([o0].[Status] <> N'inactive' OR [o0].[Status] IS NULL) AND ([o0].[Status] <> N'valid' OR [o0].[Status] IS NULL)) OR ([o1].[Id] IS NOT NULL AND ([o1].[Status] <> N'valid' OR [o1].[Status] IS NULL)) OR [o0].[ExpirationDate] < GETUTCDATE())
+    ORDER BY [o0].[Id]
+)" (0723d8ff)
+2024-05-28T16:58:46.5409121+01:00  [INF] Executed DbCommand ("13"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__date_0='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""DELETE FROM [o]
+FROM [OpenIddictAuthorizations] AS [o]
+WHERE [o].[Id] IN (
+    SELECT TOP(@__p_1) [o0].[Id]
+    FROM [OpenIddictAuthorizations] AS [o0]
+    WHERE [o0].[CreationDate] < @__date_0 AND ([o0].[Status] <> N'valid' OR [o0].[Status] IS NULL OR ([o0].[Type] = N'ad-hoc' AND NOT EXISTS (
+        SELECT 1
+        FROM [OpenIddictTokens] AS [o1]
+        WHERE [o0].[Id] = [o1].[AuthorizationId])))
+    ORDER BY [o0].[Id]
+)" (0723d8ff)
+2024-05-28T16:58:57.9994170+01:00 0HN3V5PVOOOBP:00000001 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T17:01:02.4375511+01:00 0HN3V5PVOOOCB:00000005 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T17:03:04.0258341+01:00 0HN3V5PVOOOD0:00000007 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T17:05:06.3098454+01:00 0HN3V5PVOOODI:00000001 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T17:07:10.4718181+01:00 0HN3V5PVOOOE0:00000003 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T17:13:22.1712988+01:00 0HN3V5PVOOOEE:00000001 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T17:15:26.5454523+01:00 0HN3V5PVOOOER:00000001 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T17:17:30.9473233+01:00 0HN3V5PVOOOF9:00000003 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T17:19:33.7640043+01:00 0HN3V5PVOOOFP:00000001 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T17:21:37.4071298+01:00 0HN3V5PVOOOG7:00000001 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T17:23:39.2235200+01:00 0HN3V5PVOOOGK:00000001 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T17:27:39.2497889+01:00 0HN3V5PVOOOGR:00000001 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T17:29:41.4904621+01:00 0HN3V5PVOOOH9:00000003 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T17:31:46.4562097+01:00 0HN3V5PVOOOHQ:00000003 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T17:33:50.7573093+01:00 0HN3V5PVOOOIE:00000003 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T17:35:52.3605148+01:00 0HN3V5PVOOOJ5:00000001 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T17:37:54.5576776+01:00 0HN3V5PVOOOJQ:00000001 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-28T17:39:58.2070209+01:00 0HN3V5PVOOOKF:00000007 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)

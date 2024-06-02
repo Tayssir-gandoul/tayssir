@@ -1,0 +1,359 @@
+2024-05-27T22:30:18.8764557+01:00  [WRN] The WebRootPath was not found: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2024-05-27T22:30:31.2870413+01:00  [INF] Executed DbCommand ("205"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-05-27T22:30:31.4119826+01:00  [INF] Executed DbCommand ("71"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2024-05-27T22:30:31.4252942+01:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-05-27T22:30:31.4315661+01:00  [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2024-05-27T22:30:31.6470177+01:00  [INF] Executed DbCommand ("42"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2024-05-27T22:30:31.6995997+01:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2024-05-27T22:30:33.5926892+01:00  [INF] Executed DbCommand ("39"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2024-05-27T22:30:34.3285253+01:00  [INF] Executed DbCommand ("81"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2024-05-27T22:30:34.4326584+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2024-05-27T22:30:36.9452742+01:00  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2024-05-27T22:30:36.9466051+01:00  [INF] Quartz Scheduler created (389d80b0)
+2024-05-27T22:30:36.9480491+01:00  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2024-05-27T22:30:36.9494875+01:00  [INF] RAMJobStore initialized. (8c5a21db)
+2024-05-27T22:30:36.9516198+01:00  [INF] Quartz Scheduler 3.9.0.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized (a92b7017)
+2024-05-27T22:30:36.9527818+01:00  [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10 (7942d54d)
+2024-05-27T22:30:36.9544188+01:00  [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False (46d3fae1)
+2024-05-27T22:30:39.8095738+01:00  [WRN] The WebRootPath was not found: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2024-05-27T22:30:40.1316000+01:00  [INF] Now listening on: "https://localhost:7085" (d826f4b8)
+2024-05-27T22:30:40.1349104+01:00  [INF] Now listening on: "http://localhost:5225" (d826f4b8)
+2024-05-27T22:30:40.1373106+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-05-27T22:30:40.1408159+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-05-27T22:30:40.1426543+01:00  [INF] Content root path: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server" (cc26f24e)
+2024-05-27T22:30:40.1464667+01:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2024-05-27T22:32:43.9549457+01:00  [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-27T22:34:37.2440052+01:00  [INF] Executed DbCommand ("140"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__date_0='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""DELETE FROM [o]
+FROM [OpenIddictTokens] AS [o]
+WHERE [o].[Id] IN (
+    SELECT TOP(@__p_1) [o0].[Id]
+    FROM [OpenIddictTokens] AS [o0]
+    LEFT JOIN [OpenIddictAuthorizations] AS [o1] ON [o0].[AuthorizationId] = [o1].[Id]
+    WHERE [o0].[CreationDate] < @__date_0 AND ((([o0].[Status] <> N'inactive' OR [o0].[Status] IS NULL) AND ([o0].[Status] <> N'valid' OR [o0].[Status] IS NULL)) OR ([o1].[Id] IS NOT NULL AND ([o1].[Status] <> N'valid' OR [o1].[Status] IS NULL)) OR [o0].[ExpirationDate] < GETUTCDATE())
+    ORDER BY [o0].[Id]
+)" (0723d8ff)
+2024-05-27T22:34:37.2866351+01:00  [INF] Executed DbCommand ("19"ms) [Parameters=["@__p_1='?' (DbType = Int32), @__date_0='?' (DbType = DateTime2)"], CommandType='Text', CommandTimeout='30']"
+""DELETE FROM [o]
+FROM [OpenIddictAuthorizations] AS [o]
+WHERE [o].[Id] IN (
+    SELECT TOP(@__p_1) [o0].[Id]
+    FROM [OpenIddictAuthorizations] AS [o0]
+    WHERE [o0].[CreationDate] < @__date_0 AND ([o0].[Status] <> N'valid' OR [o0].[Status] IS NULL OR ([o0].[Type] = N'ad-hoc' AND NOT EXISTS (
+        SELECT 1
+        FROM [OpenIddictTokens] AS [o1]
+        WHERE [o0].[Id] = [o1].[AuthorizationId])))
+    ORDER BY [o0].[Id]
+)" (0723d8ff)
+2024-05-27T22:34:59.4719847+01:00 0HN3UIH0S3CJT:00000003 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-27T22:37:01.6324382+01:00 0HN3UIH0S3CK6:00000017 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-27T22:39:29.9201627+01:00  [WRN] The WebRootPath was not found: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2024-05-27T22:39:31.8390550+01:00  [INF] Executed DbCommand ("68"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-05-27T22:39:31.9479229+01:00  [INF] Executed DbCommand ("66"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2024-05-27T22:39:31.9611677+01:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-05-27T22:39:31.9687383+01:00  [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2024-05-27T22:39:32.0314106+01:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2024-05-27T22:39:32.0820754+01:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2024-05-27T22:39:32.5816580+01:00  [INF] Executed DbCommand ("66"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2024-05-27T22:39:32.8373409+01:00  [INF] Executed DbCommand ("56"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2024-05-27T22:39:33.0259104+01:00  [INF] Executed DbCommand ("14"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2024-05-27T22:39:33.2281664+01:00  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2024-05-27T22:39:33.2326525+01:00  [INF] Quartz Scheduler created (389d80b0)
+2024-05-27T22:39:33.2366184+01:00  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2024-05-27T22:39:33.2388839+01:00  [INF] RAMJobStore initialized. (8c5a21db)
+2024-05-27T22:39:33.2438044+01:00  [INF] Quartz Scheduler 3.9.0.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized (a92b7017)
+2024-05-27T22:39:33.2461884+01:00  [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10 (7942d54d)
+2024-05-27T22:39:33.2484901+01:00  [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False (46d3fae1)
+2024-05-27T22:39:33.5525747+01:00  [WRN] The WebRootPath was not found: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2024-05-27T22:39:33.7830757+01:00  [INF] Now listening on: "https://localhost:7085" (d826f4b8)
+2024-05-27T22:39:33.7871012+01:00  [INF] Now listening on: "http://localhost:5225" (d826f4b8)
+2024-05-27T22:39:33.7935721+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-05-27T22:39:33.7979895+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-05-27T22:39:33.8006294+01:00  [INF] Content root path: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server" (cc26f24e)
+2024-05-27T22:39:33.8092303+01:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2024-05-27T22:42:21.5604937+01:00  [WRN] The WebRootPath was not found: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2024-05-27T22:42:28.2413678+01:00  [INF] Executed DbCommand ("61"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-05-27T22:42:28.3169898+01:00  [INF] Executed DbCommand ("50"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2024-05-27T22:42:28.3241378+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-05-27T22:42:28.3297345+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2024-05-27T22:42:28.3814813+01:00  [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2024-05-27T22:42:28.4340409+01:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2024-05-27T22:42:28.7506227+01:00  [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2024-05-27T22:42:29.1292066+01:00  [INF] Executed DbCommand ("42"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2024-05-27T22:42:29.2372976+01:00  [INF] Executed DbCommand ("4"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2024-05-27T22:42:29.3859678+01:00  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2024-05-27T22:42:29.3880363+01:00  [INF] Quartz Scheduler created (389d80b0)
+2024-05-27T22:42:29.3903497+01:00  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2024-05-27T22:42:29.3928997+01:00  [INF] RAMJobStore initialized. (8c5a21db)
+2024-05-27T22:42:29.3956418+01:00  [INF] Quartz Scheduler 3.9.0.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized (a92b7017)
+2024-05-27T22:42:29.3982578+01:00  [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10 (7942d54d)
+2024-05-27T22:42:29.4004306+01:00  [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False (46d3fae1)
+2024-05-27T22:42:29.6922732+01:00  [WRN] The WebRootPath was not found: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2024-05-27T22:42:29.8660091+01:00  [INF] Now listening on: "https://localhost:7085" (d826f4b8)
+2024-05-27T22:42:29.8680371+01:00  [INF] Now listening on: "http://localhost:5225" (d826f4b8)
+2024-05-27T22:42:29.8706519+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-05-27T22:42:29.8738610+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-05-27T22:42:29.8770485+01:00  [INF] Content root path: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server" (cc26f24e)
+2024-05-27T22:42:29.8828113+01:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2024-05-27T22:45:56.8542401+01:00  [WRN] The WebRootPath was not found: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2024-05-27T22:46:00.1397769+01:00  [INF] Executed DbCommand ("54"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-05-27T22:46:00.1979517+01:00  [INF] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2024-05-27T22:46:00.2049040+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-05-27T22:46:00.2090414+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2024-05-27T22:46:00.2454576+01:00  [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2024-05-27T22:46:00.2785679+01:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2024-05-27T22:46:00.9002952+01:00  [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2024-05-27T22:46:01.0770628+01:00  [INF] Executed DbCommand ("41"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2024-05-27T22:46:01.2939186+01:00  [INF] Executed DbCommand ("11"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2024-05-27T22:46:01.4649290+01:00  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2024-05-27T22:46:01.4688178+01:00  [INF] Quartz Scheduler created (389d80b0)
+2024-05-27T22:46:01.4740514+01:00  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2024-05-27T22:46:01.4778038+01:00  [INF] RAMJobStore initialized. (8c5a21db)
+2024-05-27T22:46:01.4832315+01:00  [INF] Quartz Scheduler 3.9.0.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized (a92b7017)
+2024-05-27T22:46:01.4860532+01:00  [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10 (7942d54d)
+2024-05-27T22:46:01.4888417+01:00  [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False (46d3fae1)
+2024-05-27T22:46:01.7051985+01:00  [WRN] The WebRootPath was not found: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2024-05-27T22:46:01.8487785+01:00  [INF] Now listening on: "https://localhost:7085" (d826f4b8)
+2024-05-27T22:46:01.8520450+01:00  [INF] Now listening on: "http://localhost:5225" (d826f4b8)
+2024-05-27T22:46:01.8551918+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-05-27T22:46:01.8585749+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-05-27T22:46:01.8611076+01:00  [INF] Content root path: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server" (cc26f24e)
+2024-05-27T22:46:01.8669317+01:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2024-05-27T22:46:11.0181263+01:00  [ERR] Couldn't start the SPA development server with command 'npm start'. (1b2540fa)
+2024-05-27T22:46:19.4259249+01:00 0HN3UIPJGATS7:00000003 [ERR] Couldn't start the SPA development server with command 'npm start'. (1b2540fa)
+2024-05-27T22:46:26.5742209+01:00 0HN3UIPJGATS7:00000005 [ERR] Couldn't start the SPA development server with command 'npm start'. (1b2540fa)
+2024-05-27T22:48:22.8942312+01:00  [WRN] The WebRootPath was not found: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2024-05-27T22:48:25.1427070+01:00  [INF] Executed DbCommand ("37"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-05-27T22:48:25.2104796+01:00  [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2024-05-27T22:48:25.2265398+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1" (0723d8ff)
+2024-05-27T22:48:25.2298881+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');" (0723d8ff)
+2024-05-27T22:48:25.2862842+01:00  [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];" (0723d8ff)
+2024-05-27T22:48:25.3227117+01:00  [INF] No migrations were applied. The database is already up to date. (503cba9d)
+2024-05-27T22:48:25.6931706+01:00  [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2024-05-27T22:48:25.8885622+01:00  [INF] Executed DbCommand ("42"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2024-05-27T22:48:26.0280414+01:00  [INF] Executed DbCommand ("3"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2024-05-27T22:48:26.1747865+01:00  [INF] Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl (d6ab0d5f)
+2024-05-27T22:48:26.1770330+01:00  [INF] Quartz Scheduler created (389d80b0)
+2024-05-27T22:48:26.1794487+01:00  [INF] JobFactory set to: Quartz.Simpl.MicrosoftDependencyInjectionJobFactory (17471663)
+2024-05-27T22:48:26.1815921+01:00  [INF] RAMJobStore initialized. (8c5a21db)
+2024-05-27T22:48:26.1843899+01:00  [INF] Quartz Scheduler 3.9.0.0 - 'QuartzScheduler' with instanceId 'NON_CLUSTERED' initialized (a92b7017)
+2024-05-27T22:48:26.1872334+01:00  [INF] Using thread pool 'Quartz.Simpl.DefaultThreadPool', size: 10 (7942d54d)
+2024-05-27T22:48:26.1891516+01:00  [INF] Using job store 'Quartz.Simpl.RAMJobStore', supports persistence: False, clustered: False (46d3fae1)
+2024-05-27T22:48:26.5370347+01:00  [WRN] The WebRootPath was not found: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server\wwwroot". Static files may be unavailable. (3ae2c740)
+2024-05-27T22:48:26.7181074+01:00  [INF] Now listening on: "https://localhost:7085" (d826f4b8)
+2024-05-27T22:48:26.7208241+01:00  [INF] Now listening on: "http://localhost:5225" (d826f4b8)
+2024-05-27T22:48:26.7238124+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2024-05-27T22:48:26.7272735+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2024-05-27T22:48:26.7299521+01:00  [INF] Content root path: "C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Server" (cc26f24e)
+2024-05-27T22:48:26.7369196+01:00  [INF] Scheduler QuartzScheduler_$_NON_CLUSTERED started. (51b2cfb9)
+2024-05-27T22:48:58.0044261+01:00 0HN3UIQUOQOVM:00000001 [INF] The request URI matched a server endpoint: Token. (956b2bc6)
+2024-05-27T22:48:58.0424649+01:00 0HN3UIQUOQOVM:00000001 [INF] The token request was successfully extracted: "{
+  \"username\": \"admin\",
+  \"password\": \"[redacted]\",
+  \"client_id\": \"quickapp_spa\",
+  \"grant_type\": \"password\",
+  \"scope\": \"openid email phone profile offline_access roles\"
+}". (04f13da8)
+2024-05-27T22:48:58.1153796+01:00 0HN3UIQUOQOVM:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2024-05-27T22:48:58.1379844+01:00 0HN3UIQUOQOVM:00000001 [INF] The token request was successfully validated. (d7e51e65)
+2024-05-27T22:48:58.2404461+01:00 0HN3UIQUOQOVM:00000001 [INF] Executed DbCommand ("13"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Configuration], [a].[CreatedBy], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsEnabled], [a].[JobTitle], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedBy], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2024-05-27T22:48:58.5158422+01:00 0HN3UIQUOQOVM:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Configuration], [a].[CreatedBy], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsEnabled], [a].[JobTitle], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedBy], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2024-05-27T22:48:58.5390547+01:00 0HN3UIQUOQOVM:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Configuration], [a].[CreatedBy], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsEnabled], [a].[JobTitle], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedBy], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2024-05-27T22:48:58.6726181+01:00 0HN3UIQUOQOVM:00000001 [INF] Executed DbCommand ("44"ms) [Parameters=["@p20='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p21='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTimeOffset), @p10='?' (Size = 256), @p11='?' (Size = 256), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 4000), @p18='?' (DbType = DateTime2), @p19='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Configuration] = @p2, [Email] = @p3, [EmailConfirmed] = @p4, [FullName] = @p5, [IsEnabled] = @p6, [JobTitle] = @p7, [LockoutEnabled] = @p8, [LockoutEnd] = @p9, [NormalizedEmail] = @p10, [NormalizedUserName] = @p11, [PasswordHash] = @p12, [PhoneNumber] = @p13, [PhoneNumberConfirmed] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UpdatedBy] = @p17, [UpdatedDate] = @p18, [UserName] = @p19
+OUTPUT 1
+WHERE [Id] = @p20 AND [ConcurrencyStamp] = @p21;" (0723d8ff)
+2024-05-27T22:48:58.7096788+01:00 0HN3UIQUOQOVM:00000001 [INF] The response was successfully returned as a JSON document: "{
+  \"error\": \"invalid_grant\",
+  \"error_description\": \"Please check that your username and password is correct.\",
+  \"error_uri\": \"https://documentation.openiddict.com/errors/ID2024\"
+}". (c5d7b905)
+2024-05-27T22:48:58.7210775+01:00 0HN3UIQUOQOVM:00000001 [INF] AuthenticationScheme: "OpenIddict.Server.AspNetCore" was forbidden. (212684b8)
+2024-05-27T22:49:09.1944623+01:00 0HN3UIQUOQOVO:00000001 [INF] The request URI matched a server endpoint: Token. (956b2bc6)
+2024-05-27T22:49:09.1965875+01:00 0HN3UIQUOQOVO:00000001 [INF] The token request was successfully extracted: "{
+  \"username\": \"admin\",
+  \"password\": \"[redacted]\",
+  \"client_id\": \"quickapp_spa\",
+  \"grant_type\": \"password\",
+  \"scope\": \"openid email phone profile offline_access roles\"
+}". (04f13da8)
+2024-05-27T22:49:09.2187086+01:00 0HN3UIQUOQOVO:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__identifier_0='?' (Size = 100)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [o].[Id], [o].[ApplicationType], [o].[ClientId], [o].[ClientSecret], [o].[ClientType], [o].[ConcurrencyToken], [o].[ConsentType], [o].[DisplayName], [o].[DisplayNames], [o].[JsonWebKeySet], [o].[Permissions], [o].[PostLogoutRedirectUris], [o].[Properties], [o].[RedirectUris], [o].[Requirements], [o].[Settings]
+FROM [OpenIddictApplications] AS [o]
+WHERE [o].[ClientId] = @__identifier_0" (0723d8ff)
+2024-05-27T22:49:09.2236076+01:00 0HN3UIQUOQOVO:00000001 [INF] The token request was successfully validated. (d7e51e65)
+2024-05-27T22:49:09.2319016+01:00 0HN3UIQUOQOVO:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Configuration], [a].[CreatedBy], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsEnabled], [a].[JobTitle], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedBy], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2024-05-27T22:49:09.3107570+01:00 0HN3UIQUOQOVO:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Configuration], [a].[CreatedBy], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsEnabled], [a].[JobTitle], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedBy], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2024-05-27T22:49:09.3147176+01:00 0HN3UIQUOQOVO:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Configuration], [a].[CreatedBy], [a].[CreatedDate], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[IsEnabled], [a].[JobTitle], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UpdatedBy], [a].[UpdatedDate], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2024-05-27T22:49:09.3263408+01:00 0HN3UIQUOQOVO:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@p20='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p21='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (Size = 4000), @p8='?' (DbType = Boolean), @p9='?' (DbType = DateTimeOffset), @p10='?' (Size = 256), @p11='?' (Size = 256), @p12='?' (Size = 4000), @p13='?' (Size = 4000), @p14='?' (DbType = Boolean), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 4000), @p18='?' (DbType = DateTime2), @p19='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Configuration] = @p2, [Email] = @p3, [EmailConfirmed] = @p4, [FullName] = @p5, [IsEnabled] = @p6, [JobTitle] = @p7, [LockoutEnabled] = @p8, [LockoutEnd] = @p9, [NormalizedEmail] = @p10, [NormalizedUserName] = @p11, [PasswordHash] = @p12, [PhoneNumber] = @p13, [PhoneNumberConfirmed] = @p14, [SecurityStamp] = @p15, [TwoFactorEnabled] = @p16, [UpdatedBy] = @p17, [UpdatedDate] = @p18, [UserName] = @p19
+OUTPUT 1
+WHERE [Id] = @p20 AND [ConcurrencyStamp] = @p21;" (0723d8ff)
+2024-05-27T22:49:09.3809182+01:00 0HN3UIQUOQOVO:00000001 [INF] Executed DbCommand ("8"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2024-05-27T22:49:09.4226062+01:00 0HN3UIQUOQOVO:00000001 [INF] Executed DbCommand ("10"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2024-05-27T22:49:09.4371141+01:00 0HN3UIQUOQOVO:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedBy], [a].[CreatedDate], [a].[Description], [a].[Name], [a].[NormalizedName], [a].[UpdatedBy], [a].[UpdatedDate]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2024-05-27T22:49:09.4648671+01:00 0HN3UIQUOQOVO:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0" (0723d8ff)
+2024-05-27T22:49:09.5752143+01:00 0HN3UIQUOQOVO:00000001 [INF] Executed DbCommand ("12"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450), @p2='?' (Size = 50), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 50), @p7='?' (Size = 400), @p8='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [OpenIddictAuthorizations] ([Id], [ApplicationId], [ConcurrencyToken], [CreationDate], [Properties], [Scopes], [Status], [Subject], [Type])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);" (0723d8ff)
+2024-05-27T22:49:09.5904188+01:00 0HN3UIQUOQOVO:00000001 [INF] An ad hoc authorization was automatically created and associated with the '"quickapp_spa"' application: "d29a271f-d269-4f82-924d-5ebdbcc9f79e". (1ff6b081)
+2024-05-27T22:49:09.6614568+01:00 0HN3UIQUOQOVO:00000001 [INF] Executed DbCommand ("12"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450), @p2='?' (Size = 450), @p3='?' (Size = 50), @p4='?' (DbType = DateTime2), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2), @p9='?' (Size = 100), @p10='?' (Size = 50), @p11='?' (Size = 400), @p12='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [OpenIddictTokens] ([Id], [ApplicationId], [AuthorizationId], [ConcurrencyToken], [CreationDate], [ExpirationDate], [Payload], [Properties], [RedemptionDate], [ReferenceId], [Status], [Subject], [Type])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);" (0723d8ff)
+2024-05-27T22:49:09.8322992+01:00 0HN3UIQUOQOVO:00000001 [INF] Executed DbCommand ("5"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450), @p2='?' (Size = 450), @p3='?' (Size = 50), @p4='?' (DbType = DateTime2), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2), @p9='?' (Size = 100), @p10='?' (Size = 50), @p11='?' (Size = 400), @p12='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [OpenIddictTokens] ([Id], [ApplicationId], [AuthorizationId], [ConcurrencyToken], [CreationDate], [ExpirationDate], [Payload], [Properties], [RedemptionDate], [ReferenceId], [Status], [Subject], [Type])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);" (0723d8ff)
+2024-05-27T22:49:09.8561450+01:00 0HN3UIQUOQOVO:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450), @p2='?' (Size = 450), @p3='?' (Size = 50), @p4='?' (DbType = DateTime2), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = DateTime2), @p9='?' (Size = 100), @p10='?' (Size = 50), @p11='?' (Size = 400), @p12='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [OpenIddictTokens] ([Id], [ApplicationId], [AuthorizationId], [ConcurrencyToken], [CreationDate], [ExpirationDate], [Payload], [Properties], [RedemptionDate], [ReferenceId], [Status], [Subject], [Type])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12);" (0723d8ff)
+2024-05-27T22:49:09.8629690+01:00 0HN3UIQUOQOVO:00000001 [INF] The response was successfully returned as a JSON document: "{
+  \"access_token\": \"[redacted]\",
+  \"token_type\": \"Bearer\",
+  \"expires_in\": 3599,
+  \"id_token\": \"[redacted]\",
+  \"refresh_token\": \"[redacted]\"
+}". (c5d7b905)
+2024-05-27T22:50:28.2951922+01:00  [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-27T22:52:32.2550925+01:00 0HN3UIQUOQOVQ:00000015 [ERR] Unable to connect to the SPA development server at 'https://localhost:4200'. (2081256f)
+2024-05-27T22:53:35.0175755+01:00 0HN3UIQUOQP07:00000001 [ERR] Couldn't start the SPA development server with command 'npm start'. (1b2540fa)

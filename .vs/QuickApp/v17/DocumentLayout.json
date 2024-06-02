@@ -1,0 +1,79 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tayss\\OneDrive\\Desktop\\EnerManage\\QuickApp-master\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E1205C91-58FF-4421-8F11-C735425EE045}|QuickApp.Server\\QuickApp.Server.csproj|c:\\users\\tayss\\onedrive\\desktop\\enermanage\\quickapp-master\\quickapp.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1205C91-58FF-4421-8F11-C735425EE045}|QuickApp.Server\\QuickApp.Server.csproj|solutionrelative:quickapp.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1205C91-58FF-4421-8F11-C735425EE045}|QuickApp.Server\\QuickApp.Server.csproj|c:\\users\\tayss\\onedrive\\desktop\\enermanage\\quickapp-master\\quickapp.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E1205C91-58FF-4421-8F11-C735425EE045}|QuickApp.Server\\QuickApp.Server.csproj|solutionrelative:quickapp.server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1205C91-58FF-4421-8F11-C735425EE045}|QuickApp.Server\\QuickApp.Server.csproj|c:\\users\\tayss\\onedrive\\desktop\\enermanage\\quickapp-master\\quickapp.server\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E1205C91-58FF-4421-8F11-C735425EE045}|QuickApp.Server\\QuickApp.Server.csproj|solutionrelative:quickapp.server\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\tayss\\OneDrive\\Desktop\\EnerManage\\QuickApp-master\\QuickApp.Server\\appsettings.json",
+              "RelativeDocumentMoniker": "QuickApp.Server\\appsettings.json",
+              "ToolTip": "C:\\Users\\tayss\\OneDrive\\Desktop\\EnerManage\\QuickApp-master\\QuickApp.Server\\appsettings.json",
+              "RelativeToolTip": "QuickApp.Server\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-02T00:39:42.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\tayss\\OneDrive\\Desktop\\EnerManage\\QuickApp-master\\QuickApp.Server\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "QuickApp.Server\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\tayss\\OneDrive\\Desktop\\EnerManage\\QuickApp-master\\QuickApp.Server\\appsettings.Development.json",
+              "RelativeToolTip": "QuickApp.Server\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-02T00:39:26.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tayss\\OneDrive\\Desktop\\EnerManage\\QuickApp-master\\QuickApp.Server\\Program.cs",
+              "RelativeDocumentMoniker": "QuickApp.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\tayss\\OneDrive\\Desktop\\EnerManage\\QuickApp-master\\QuickApp.Server\\Program.cs",
+              "RelativeToolTip": "QuickApp.Server\\Program.cs",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAAABAAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T15:34:21.801Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

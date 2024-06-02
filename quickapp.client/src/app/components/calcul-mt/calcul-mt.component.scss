@@ -1,0 +1,30 @@
+/* Style pour le formulaire */
+.pageHeader form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer les éléments horizontalement */
+  }
+  
+  /* Style pour chaque div contenant un champ */
+  .pageHeader form div {
+    display: flex;
+    flex-direction: row; /* Aligner les éléments horizontalement */
+    margin-bottom: 10px; /* Espacement entre chaque champ */
+    align-items: center; /* Centrer les éléments horizontalement */
+  }
+  
+  /* Style pour chaque label */
+  .pageHeader form label {
+    width: 150px; /* Largeur fixe pour les labels */
+  }
+  
+  /* Style pour chaque input */
+  .pageHeader form input {
+    flex: 1; /* Permettre aux champs de prendre l'espace restant */
+  }
+  
