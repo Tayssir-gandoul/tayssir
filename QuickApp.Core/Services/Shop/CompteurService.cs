@@ -1,40 +1,51 @@
-﻿// ---------------------------------------
-// Email: quickapp@ebenmonney.com
-// Templates: www.ebenmonney.com/templates
-// (c) 2024 www.ebenmonney.com/mit-license
-// ---------------------------------------
-
-using Microsoft.EntityFrameworkCore;
+﻿// QuickApp.Core/Services/Shop/CompteurService.cs
 using QuickApp.Core.Infrastructure;
 using QuickApp.Core.Models.Shop;
+using QuickApp.Core.Services.Shop.Interfaces;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace QuickApp.Core.Services.Shop
 {
     public class CompteurService : ICompteurService
     {
-        ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        // Constructor
-        public CompteurService(ApplicationDbContext dbContext, ApplicationDbContext context)
+        public CompteurService(ApplicationDbContext context)
         {
-            _context = dbContext;
             _context = context;
         }
 
-        // Here is your missing method .. you need to implement it
-        public IEnumerable<Compteur> GetTopActiveCompteurs(int count)
+        public IEnumerable<Compteur> GetAllCompteurs()
         {
-            // You must replace the implementation here with our own logic
-            throw new NotImplementedException();
+            return _context.Compteurs.ToList();
         }
 
-        public IEnumerable<Compteur> GetAllCompteursData()
+        public Compteur GetCompteurById(int id)
         {
-            return _context.Compteurs
-               
-                .AsSingleQuery()
-                .OrderBy(c => c.Reference)
-                .ToList();
+            return _context.Compteurs.Find(id);
+        }
+
+        public void AddCompteur(Compteur compteur)
+        {
+            _context.Compteurs.Add(compteur);
+            _context.SaveChanges();
+        }
+
+        public void UpdateCompteur(Compteur compteur)
+        {
+            _context.Compteurs.Update(compteur);
+            _context.SaveChanges();
+        }
+
+        public void DeleteCompteur(int id)
+        {
+            var compteur = _context.Compteurs.Find(id);
+            if (compteur != null)
+            {
+                _context.Compteurs.Remove(compteur);
+                _context.SaveChanges();
+            }
         }
     }
 }

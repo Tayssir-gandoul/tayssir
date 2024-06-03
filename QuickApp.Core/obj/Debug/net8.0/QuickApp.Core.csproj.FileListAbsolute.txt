@@ -7,6 +7,7 @@ C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\obj\Deb
 C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\obj\Debug\net8.0\QuickApp.Core.AssemblyInfoInputs.cache
 C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\obj\Debug\net8.0\QuickApp.Core.AssemblyInfo.cs
 C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\obj\Debug\net8.0\QuickApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\obj\Debug\net8.0\QuickApp.Core.sourcelink.json
 C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\obj\Debug\net8.0\QuickApp.Core.dll
 C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\obj\Debug\net8.0\refint\QuickApp.Core.dll
 C:\Users\tayss\OneDrive\Desktop\EnerManage\QuickApp-master\QuickApp.Core\obj\Debug\net8.0\QuickApp.Core.pdb

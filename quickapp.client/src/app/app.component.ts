@@ -316,4 +316,8 @@ export class AppComponent implements OnInit, OnDestroy {
   get canViewCalculMT(){
     return this.accountService.userHasPermission(Permissions.viewUsers);
   }
+
+  get canViewgererCompteurs() {
+    return this.accountService.userHasPermission(Permissions.viewUsers); // eg. viewCustomersPermission
+  }
 }
