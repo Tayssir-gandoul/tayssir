@@ -1,0 +1,14 @@
+<div [@fadeInOut]>
+<div>
+    <h2>Liste des Compteurs</h2>
+    <ul>
+      <li *ngFor="let compteur of compteurs">
+        {{ compteur.reference }} - {{ compteur.adresse }}
+        <button (click)="deleteCompteur(compteur.id)">Supprimer</button>
+        <button [routerLink]="['/compteurs/edit', compteur.id]">Modifier</button>
+      </li>
+    </ul>
+    <button [routerLink]="['/compteurs/add']">Ajouter Compteur</button>
+  </div>
+  
+</div>

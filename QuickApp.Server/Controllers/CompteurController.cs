@@ -1,16 +1,9 @@
-﻿// ---------------------------------------
-// Email: quickapp@ebenmonney.com
-// Templates: www.ebenmonney.com/templates
-// (c) 2024 www.ebenmonney.com/mit-license
-// ---------------------------------------
-
-using AutoMapper;
+﻿// QuickApp.Server/Controllers/CompteurController.cs
 using Microsoft.AspNetCore.Mvc;
 using QuickApp.Core.Models.Shop;
-using QuickApp.Core.Services;
 using QuickApp.Core.Services.Shop;
-using QuickApp.Server.Services.Email;
-using QuickApp.Server.ViewModels.Shop;
+using QuickApp.Core.Services.Shop.Interfaces;
+using System.Collections.Generic;
 
 namespace QuickApp.Server.Controllers
 {
@@ -18,52 +11,54 @@ namespace QuickApp.Server.Controllers
     [ApiController]
     public class CompteurController : ControllerBase
     {
-        [Route("api/[controller]")]
-        [ApiController]
-        public class CompteursController : ControllerBase
+        private readonly ICompteurService _compteurService;
+
+        public CompteurController(ICompteurService compteurService)
         {
-            private static List<Compteur> _compteurs = new List<Compteur>
+            _compteurService = compteurService;
+        }
+
+        [HttpGet]
+        public IEnumerable<Compteur> GetCompteurs()
         {
-            new Compteur { Id = 1, Reference = 100, NouveauIndex = 100, AncienIndex = 50, DateInstallation = DateTime.Now, Adresse = "Adresse 1", District = "District 1" }
-        };
+            return _compteurService.GetAllCompteurs();
+        }
 
-            [HttpGet]
-            public ActionResult<IEnumerable<Compteur>> Get()
+        [HttpGet("{id}")]
+        public ActionResult<Compteur> GetCompteur(int id)
+        {
+            var compteur = _compteurService.GetCompteurById(id);
+            if (compteur == null)
             {
-                return _compteurs;
+                return NotFound();
+            }
+            return compteur;
+        }
+
+        [HttpPost]
+        public ActionResult<Compteur> AddCompteur(Compteur compteur)
+        {
+            _compteurService.AddCompteur(compteur);
+            return CreatedAtAction(nameof(GetCompteur), new { id = compteur.Id }, compteur);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateCompteur(int id, Compteur compteur)
+        {
+            if (id != compteur.Id)
+            {
+                return BadRequest();
             }
 
-            [HttpPost]
-            public ActionResult<Compteur> Post(Compteur compteur)
-            {
-                compteur.Id = _compteurs.Count + 1;
-                _compteurs.Add(compteur);
-                return compteur;
-            }
+            _compteurService.UpdateCompteur(compteur);
+            return NoContent();
+        }
 
-            [HttpPut("{id}")]
-            public ActionResult<Compteur> Put(int id, Compteur compteur)
-            {
-                var index = _compteurs.FindIndex(c => c.Id == id);
-                if (index < 0)
-                {
-                    return NotFound();
-                }
-                _compteurs[index] = compteur;
-                return compteur;
-            }
-
-            [HttpDelete("{id}")]
-            public ActionResult Delete(int id)
-            {
-                var compteur = _compteurs.Find(c => c.Id == id);
-                if (compteur == null)
-                {
-                    return NotFound();
-                }
-                _compteurs.Remove(compteur);
-                return NoContent();
-            }
+        [HttpDelete("{id}")]
+        public IActionResult DeleteCompteur(int id)
+        {
+            _compteurService.DeleteCompteur(id);
+            return NoContent();
         }
     }
 }

@@ -36,8 +36,7 @@ import { GroupByPipe } from './pipes/group-by.pipe';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
-import { ProductsComponent } from './components/products/products.component';
-import { OrdersComponent } from './components/orders/orders.component';
+
 import { SettingsComponent } from './components/settings/settings.component';
 
 import { NotFoundComponent } from './components/not-found/not-found.component';
@@ -52,19 +51,20 @@ import { UserPreferencesComponent } from './components/controls/user-preferences
 import { UsersManagementComponent } from './components/controls/users-management.component';
 import { RolesManagementComponent } from './components/controls/roles-management.component';
 import { RoleEditorComponent } from './components/controls/role-editor.component';
-import { CompteursComponent } from './components/compteurs/compteurs.component';
+
 import { FactureMoyenneTensionComponent } from './components/facture-moyenne-tension/facture-moyenne-tension.component';
 import { FactureBaseTensionComponent } from './components/facture-base-tension/facture-base-tension.component';
 import { CalculMtComponent } from './components/calcul-mt/calcul-mt.component';
+import { CompteurListComponent } from './components/compteurs/components/compteur-list/compteur-list.component';
+import { CompteurFormComponent } from './components/compteurs/components/compteur-form/compteur-form.component';
+import { CompteurService } from './services/compteur.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    CompteursComponent,
-    ProductsComponent,
-    OrdersComponent,
+  
     SettingsComponent,
     UsersManagementComponent, UserInfoComponent, UserPreferencesComponent,
     RolesManagementComponent, RoleEditorComponent,
@@ -79,7 +79,9 @@ import { CalculMtComponent } from './components/calcul-mt/calcul-mt.component';
     GroupByPipe,
     FactureMoyenneTensionComponent,
     FactureBaseTensionComponent,
-    CalculMtComponent
+    CalculMtComponent,
+    CompteurListComponent,
+    CompteurFormComponent
   ],
   imports: [
     ReactiveFormsModule,
@@ -116,7 +118,8 @@ import { CalculMtComponent } from './components/calcul-mt/calcul-mt.component';
     AccountService,
     AccountEndpoint,
     LocalStoreManager,
-    OidcHelperService
+    OidcHelperService,
+    CompteurService
   ],
   bootstrap: [AppComponent]
 })

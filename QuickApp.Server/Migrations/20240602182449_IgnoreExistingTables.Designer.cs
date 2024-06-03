@@ -12,8 +12,8 @@ using QuickApp.Core.Infrastructure;
 namespace QuickApp.Server.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240601195931_mig")]
-    partial class mig
+    [Migration("20240602182449_IgnoreExistingTables")]
+    partial class IgnoreExistingTables
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

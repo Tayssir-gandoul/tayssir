@@ -1,0 +1,57 @@
+<div [@fadeInOut]>
+    <div>
+        <h2>{{ isEditMode ? 'Modifier Compteur' : 'Ajouter Compteur' }}</h2>
+        <form (ngSubmit)="onSubmit()">
+          <div>
+            <label for="reference">Référence</label>
+            <input id="reference" [(ngModel)]="compteur.reference" name="reference" required type="number">
+          </div>
+          <div>
+            <label for="adresse">Adresse</label>
+            <input id="adresse" [(ngModel)]="compteur.adresse" name="adresse" required>
+          </div>
+          <div>
+            <label for="district">District</label>
+            <input id="district" [(ngModel)]="compteur.district" name="district" required>
+          </div>
+          <div>
+            <label for="dateInstallation">Date d'installation</label>
+            <input id="dateInstallation" [(ngModel)]="compteur.dateInstallation" name="dateInstallation" required type="date">
+          </div>
+          <div>
+            <label for="ancienIndex">Ancien Index</label>
+            <input id="ancienIndex" [(ngModel)]="compteur.ancienIndex" name="ancienIndex" required type="number">
+          </div>
+          <div>
+            <label for="nouveauIndex">Nouveau Index</label>
+            <input id="nouveauIndex" [(ngModel)]="compteur.nouveauIndex" name="nouveauIndex" required type="number">
+          </div>
+          <div>
+            <label for="ancienIndexJour">Ancien Index Jour</label>
+            <input id="ancienIndexJour" [(ngModel)]="compteur.ancienIndexJour" name="ancienIndexJour" required type="number">
+          </div>
+          <div>
+            <label for="ancienIndexNuit">Ancien Index Nuit</label>
+            <input id="ancienIndexNuit" [(ngModel)]="compteur.ancienIndexNuit" name="ancienIndexNuit" required type="number">
+          </div>
+          <div>
+            <label for="ancienIndexPointe">Ancien Index Pointe</label>
+            <input id="ancienIndexPointe" [(ngModel)]="compteur.ancienIndexPointe" name="ancienIndexPointe" required type="number">
+          </div>
+          <div>
+            <label for="nouveauIndexJour">Nouveau Index Jour</label>
+            <input id="nouveauIndexJour" [(ngModel)]="compteur.nouveauIndexJour" name="nouveauIndexJour" required type="number">
+          </div>
+          <div>
+            <label for="nouveauIndexNuit">Nouveau Index Nuit</label>
+            <input id="nouveauIndexNuit" [(ngModel)]="compteur.nouveauIndexNuit" name="nouveauIndexNuit" required type="number">
+          </div>
+          <div>
+            <label for="nouveauIndexPointe">Nouveau Index Pointe</label>
+            <input id="nouveauIndexPointe" [(ngModel)]="compteur.nouveauIndexPointe" name="nouveauIndexPointe" required type="number">
+          </div>
+          <button type="submit">{{ isEditMode ? 'Mettre à jour' : 'Ajouter' }}</button>
+        </form>
+      </div>
+      
+</div>

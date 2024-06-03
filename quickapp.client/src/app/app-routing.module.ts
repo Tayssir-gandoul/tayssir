@@ -5,8 +5,7 @@ import { RouterModule, Routes, DefaultUrlSerializer, UrlSerializer, UrlTree, Tit
 
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
-import { ProductsComponent } from './components/products/products.component';
-import { OrdersComponent } from './components/orders/orders.component';
+
 import { SettingsComponent } from './components/settings/settings.component';
 
 import { NotFoundComponent } from './components/not-found/not-found.component';
@@ -14,10 +13,12 @@ import { AppTitleService } from './services/app-title.service';
 import { AuthService } from './services/auth.service';
 import { AuthGuard } from './services/auth-guard';
 import { Utilities } from './services/utilities';
-import { CompteursComponent } from './components/compteurs/compteurs.component';
+
 import { FactureMoyenneTensionComponent } from './components/facture-moyenne-tension/facture-moyenne-tension.component';
 import { FactureBaseTensionComponent } from './components/facture-base-tension/facture-base-tension.component';
 import { CalculMtComponent } from './components/calcul-mt/calcul-mt.component';
+import { CompteurFormComponent } from './components/compteurs/components/compteur-form/compteur-form.component';
+import { CompteurListComponent } from './components/compteurs/components/compteur-list/compteur-list.component';
 
 @Injectable()
 export class LowerCaseUrlSerializer extends DefaultUrlSerializer {
@@ -46,12 +47,11 @@ const routes: Routes = [
   {path:'facture-moyenne-tension',component:FactureMoyenneTensionComponent,canActivate:[AuthGuard], title:'Gestion Facture Moyenne Tension'},
   {path:'facture-base-tension',component:FactureBaseTensionComponent,canActivate:[AuthGuard], title:'Facture Base Tension'},
   {path:'calcul-mt',component:CalculMtComponent,canActivate:[AuthGuard], title:'Calcul Facture Moyenne Tension '},
-  { path: 'compteurs', component: CompteursComponent, canActivate: [AuthGuard], title: 'Compteures' },
-  { path: 'products', component: ProductsComponent, canActivate: [AuthGuard], title: 'Products' },
-  { path: 'orders', component: OrdersComponent, canActivate: [AuthGuard], title: 'Orders' },
   { path: 'settings', component: SettingsComponent, canActivate: [AuthGuard], title: 'Settings' },
   { path: 'home', redirectTo: '/', pathMatch: 'full' },
-  { path: '**', component: NotFoundComponent, title: 'Page Not Found' }
+  { path: '**', component: NotFoundComponent, title: 'Page Not Found' },
+  { path: 'compteur-form', component: CompteurFormComponent, canActivate: [AuthGuard], title: 'Compteures' },
+  { path: 'compteur-list', component: CompteurListComponent, canActivate: [AuthGuard], title: 'list de Compteures' },
 ];
 
 @NgModule({
